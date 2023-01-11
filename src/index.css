@@ -1,0 +1,83 @@
+* {
+  border: 1px solid red;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: ubuntu;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#content {
+  flex: 6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header > h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  background-color: black;
+  padding: 1rem;
+}
+header ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  border-top: 1px solid grey;
+}
+
+header ul > li {
+  flex: 1;
+  text-align: center;
+  padding: 0.5rem;
+  background-color: black;
+
+  color: white;
+}
+header ul > li:hover {
+  transition: all 0.3s;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: bold;
+
+  background-color: white;
+  color: black;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+  font-size: 0.75em;
+  padding: 0.2rem;
+}
+footer > div {
+  flex: 1;
+  margin: 0 2rem;
+}
+footer > div > ul {
+  list-style-type: none;
+}
+footer > div > ul > li {
+  padding: 0.1rem;
+}
+footer > div > ul > li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#content {
+  background-image: url("../src/assets/bg.webp");
+  background-size: cover;
+}
